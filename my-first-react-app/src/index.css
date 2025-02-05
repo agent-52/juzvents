@@ -1,0 +1,352 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #FFFFE3;
+    
+    /* border-color: #30302b; */
+    
+    
+}
+
+input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #FFFFE3;
+}
+body{
+  background-color: #10100e;
+    
+}
+button{
+    border: none;
+}
+
+link{
+    color: inherit;
+}
+
+@font-face {
+    font-family: lightF;
+    src: url("/fonts/Satoshi-Light.ttf");
+}
+@font-face {
+    font-family: regularF;
+    src: url("/fonts/Satoshi-Regular.ttf");
+}
+@font-face {
+    font-family: boldF;
+    src: url("/fonts/Satoshi-Bold.ttf");
+}
+@font-face {
+    font-family: mediumF;
+    src: url("/fonts/Satoshi-Medium.ttf");
+}
+@font-face {
+    font-family: blackF;
+    src: url("/fonts/Satoshi-Black.ttf");
+}
+.lightF{
+    font-family: lightF;
+}
+.mediumF{
+    font-family: mediumF;
+}
+.boldF{
+    font-family: boldF;
+}
+.blackF{
+    font-family: blackF;
+}
+.regularF{
+    font-family: regularF;
+}
+
+/*  */
+
+.flex{
+    display: flex;
+}
+.flexC{
+    display: flex;
+    flex-direction: column;
+}
+
+/* 
+ */
+.justifyE{
+    justify-content: end;
+}
+.justifyC{
+    justify-content: center;
+}
+.justifySe{
+  justify-content: space-evenly;
+}
+
+.alignC{
+    align-items: center;
+}
+.textC{
+  text-align: center;
+}
+.placeSelfC{
+  place-self: center;
+}
+
+
+/* 
+ */
+
+ .gap0{
+    gap: 0.5rem;
+ }
+ .gap00{
+  gap: 0.2rem;
+ }
+ .gap1{
+    gap: 1rem;
+ }
+ .gap1_5{
+    gap: 1.5rem;
+ }
+ .gap2{
+    gap: 2rem;
+ }
+ .gap3{
+    gap: 3rem;
+ }
+ .gap4{
+    gap: 4rem;
+ }
+ .gap6{
+  gap: 6rem;
+ }
+
+ /* 
+  */
+.fs1_5{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}.fs1{
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+}
+.fs1_2{
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+.fs1_3{
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+}
+.fs1_8{
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+.fs2{
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.fs2_3{
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+}
+.fs2_5{
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+.fs3{
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+/* 
+ */
+ .capital{
+    text-transform: uppercase;
+ }
+ 
+ /* 
+  */
+  .bgW{
+    background-color: #FFFFE3;
+  }
+  .cW{
+    color: #FFFFE3;
+  }
+  .bgLd{
+    background-color: #30302b;
+  }
+  .cLd{
+    color: #8d8d7f;
+  }
+  .bgD{
+    background-color: #10100e;
+  }
+  .cD{
+    color: #10100e;
+  }
+
+  /* 
+  */
+  .pdi1{
+    padding-inline: 1rem;
+  }.pdi1_5{
+    padding-inline: 1.5rem;
+  }
+  .pdi2{
+    padding-inline: 2rem;
+  }
+  .pdi3{
+    padding-inline: 3rem;
+  }
+  
+
+  .pdb0_5{
+    padding-block: 0.7rem;
+  }
+  .pdb0_7{
+    padding-block: 0.9rem;
+  }
+  .pdb1{
+    padding-block: 1rem;
+  }
+  .pd1_5{
+    padding-block: 1.9rem;
+  }
+  .pdb2{
+    padding-block: 2rem;
+  }
+  .pdb3{
+    padding-block: 3rem;
+  }
+  .pdb4{
+    padding-block: 4rem;
+  }
+  .pdb5{
+    padding-block: 5rem;
+  }
+  .pdb6{
+    padding-block: 6rem;
+  }
+  .pdt1{
+    padding-top: 1rem;
+  }
+  .pdt2{
+    padding-top: 2rem;
+  }
+  .pdt3{
+    padding-top: 3rem;
+  }
+  .pdt4{
+    padding-top: 4rem;
+  }
+  .pdB2{
+    padding-bottom: 2rem;
+  }
+  .pdB1{
+    padding-bottom: 1.7rem;
+  }
+
+
+  /* 
+   */
+   .mgT2{
+    margin-top: 2rem;
+   }
+
+
+
+
+/* 
+ */
+.bT1W{
+  border-top: 1px solid #ffffe39a;
+}
+
+
+
+
+  /* 
+   */
+   .noLineBreak{
+    white-space: noWrap;
+   }
+   .minContent{
+    width: min-content;
+   }
+   .mxW40{
+    max-width: 40ch;
+   }
+   .mxW30{
+    max-width: 25ch;
+   }
+   .w100{
+    width: 100%
+   }
+
+   /* 
+    */
+  .section1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .section2{
+    padding-inline: 4rem;
+  }
+  .section2Courseral{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+  }
+  .section3{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    
+    
+
+    
+
+  }
+
+  /*  */
+  .brR{
+    border-radius: 5rem;
+  }
+
+  /* 
+   */
+   input, textarea{
+    background-color: transparent;
+    font-family: lightF;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid  #FFFFE3;
+   }
+   .emailBox{
+    background-color: transparent;
+    border: 0px ;
+    border: 1.5px solid  #FFFFE3;
+    padding: 0.7rem 1.5rem;
+    width: 28%;
+   }
+   label{
+    font-family: lightF;
+
+   }
+
+   .socialBox{
+    width: 23px;
+    height: 23px;
+   }
+   .socialBox>img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+   }
