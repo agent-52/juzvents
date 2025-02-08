@@ -13,7 +13,7 @@ const Section2 = () =>{
                         <h5 className="fs1 regularF capital">surprises</h5>
                         <div className="fs1_5 boldF capital flexC alignC gap0">
                             <h3>for your</h3>
-                            <h3>hangout</h3>   
+                            <h3>friends</h3>   
                         </div>
                     </div>
                 </div>
