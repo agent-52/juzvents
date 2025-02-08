@@ -1,16 +1,56 @@
 // import {img1} from "../public/images/1.jpg"
 import "../ComStyles/Section4.css"
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Section4 = () =>{
-
+    useGSAP(() => {
+        // gsap code here...
+        gsap.to('.splitCard1', { 
+            scale: 0.7,
+            opacity: 0,
+            scrollTrigger:{
+                trigger: '.splitCard1',
+                start: "top 10%",
+                end: "bottom 15%", 
+                
+                scrub: 1,
+                // pin: true
+            }
+        }); // <-- automatically reverted
+        gsap.to('.splitCard2', { 
+            scale: 0.7,
+            opacity: 0,
+            scrollTrigger:{
+                trigger: '.splitCard2',
+                start: "top 10%",
+                end: "bottom 15%", 
+                
+                scrub: 1,
+            }
+        });
+        gsap.to('.splitCard3', { 
+            scale: 0.7,
+            opacity: 0,
+            scrollTrigger:{
+                trigger: '.splitCard3',
+                start: "top 10%",
+                end: "bottom 15%", 
+                
+                scrub: 1,
+            }
+        });
+    }); 
 
     return(
         <section>
             <h3 className="boldF fs3 capital textC pdb2 pdt4">your memories. handicrafted for you</h3>
-            <div className="flexC gap alignC fs2 lightF">
+            <div className="flexC gap alignC fs2 lightF pdB2">
                 <h6>We take care of all the ideation, planning, and execution, so you can focus on </h6>
                 <h6>celebrating your big day!</h6>
             </div>
-            <div className="splitCards">
+            <div className="splitCards splitCard1">
                 <div className="imgBox">
                     <img src="/images/1.jpg" alt="" />
                 </div>
@@ -21,7 +61,7 @@ const Section4 = () =>{
 
                 </div>
             </div>
-            <div className="splitCards">
+            <div className="splitCards splitCard2">
                 <div className="imgBox">
                     <img src="/images/8.webp" alt="" />
                 </div>
@@ -33,7 +73,7 @@ const Section4 = () =>{
 
                 </div>
             </div>
-            <div className="splitCards">
+            <div className="splitCards splitCard3">
                 <div className="imgBox">
                     <img src="/images/10.jpg" alt="" />
                 </div>

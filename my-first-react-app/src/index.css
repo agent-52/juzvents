@@ -244,12 +244,24 @@ link{
   .pdt4{
     padding-top: 4rem;
   }
+  .pdt6{
+    padding-top: 6rem;
+  }
+  .pdt8{
+    padding-top: 8rem;
+  }
   .pdB2{
     padding-bottom: 2rem;
   }
   .pdB1{
     padding-bottom: 1.7rem;
   }
+
+  /* 
+   */
+   .tY15{
+    transform: translateY(-50%);
+   }
 
 
   /* 
@@ -294,9 +306,12 @@ link{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    align-items: center;
+    
   }
   .section2{
     padding-inline: 4rem;
+    padding-block: 5rem;
   }
   .section2Courseral{
     display: grid;
@@ -307,7 +322,9 @@ link{
   .section3{
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    
+    height: min-content;
+    padding-block: 5rem;
+
     
 
     
@@ -349,4 +366,32 @@ link{
     object-fit: cover;
     width: 100%;
     height: 100%;
+   }
+   .boxImg1{
+     width: 100%;
+     height: 100%;
+   }
+   .boxImg1> img{
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+     object-position: center;
+   }
+   .boxImage2{
+    display: grid;
+    place-items: center;
+   }
+   .s3ImgBox{
+    width: 90%;
+    height: 85%;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    transform: translateX(-20%);
+   }
+   .boxImage2 img{
+    object-fit: cover;
+    width: 120%;
+    height: inherit;
+    
    }

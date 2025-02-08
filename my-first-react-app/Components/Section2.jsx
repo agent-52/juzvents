@@ -6,36 +6,36 @@ const Section2 = () =>{
             <h1 className="boldF fs3 capital textC ">your celebration deserves more</h1>
             <div className="section2Courseral">
                 <div>
-                    <div>
-                        <img src="" alt="" />
+                    <div className="boxImg1">
+                        <img src="/images/4.jpg" alt="" />
                     </div>
-                    <div className="flexC gap0 alignC">
+                    <div className="flexC gap1 alignC tY15">
                         <h5 className="fs1 regularF capital">surprises</h5>
-                        <div className="fs1_5 boldF capital flexC alignC">
+                        <div className="fs1_5 boldF capital flexC alignC gap0">
                             <h3>for your</h3>
                             <h3>hangout</h3>   
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div>
-                        <img src="" alt="" />
+                    <div className="boxImg1">
+                        <img src="/images/proposal4.jpg" alt="" />
                     </div>
-                    <div className="flexC gap0 alignC">
+                    <div className="flexC gap1 alignC tY15">
                         <h5 className="fs1 regularF capital">surprises</h5>
-                        <div className="fs1_5 boldF capital flexC alignC">
+                        <div className="fs1_5 boldF capital flexC alignC gap0">
                             <h3>for your</h3>
                             <h3>partner</h3>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div>
-                        <img src="" alt="" />
+                    <div className="boxImg1">
+                        <img src="/images/2.webp" alt="" />
                     </div>
-                    <div className="flexC gap0 alignC">
+                    <div className="flexC gap1 alignC tY15">
                         <h5 className="fs1 regularF capital">surprises</h5>
-                        <div className="fs1_5 boldF capital flexC alignC">
+                        <div className="fs1_5 boldF capital flexC alignC gap0">
                             <h3>for your</h3>
                             <h3>family</h3>
                             

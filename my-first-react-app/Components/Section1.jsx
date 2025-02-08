@@ -16,8 +16,8 @@ const Section1 = () =>{
                 </div>
                 <Button text="Plan a Surprise" classArray="cD bgW pdi2 mediumF fs1 pdb0_5 minContent noLineBreak" />
             </div>
-            <div>
-                <img src="" alt="" />
+            <div className="boxImg1">
+                <img src="/images/hero1.jpg" alt="" />
             </div>
         </section>
     )

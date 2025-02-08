@@ -3,7 +3,7 @@ import Button from "../Components/Button"
 const FormSection = () =>{
 
     return(
-        <section className="flex justifyC gap6">
+        <section className="flex justifyC gap6 pdb6 pdt8">
             <div className="flexC gap2">
                 <h5 className="capital lightF fs1">let's talk, shall we?</h5>
                 <div className="boldF fs2_5 flexC gap1">

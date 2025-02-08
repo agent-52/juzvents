@@ -6,7 +6,7 @@ import Button from "./Button";
 const Header = () =>{
 
     return(
-        <header className="lightF fs1 noLineBreak">
+        <header className="lightF fs1 noLineBreak bgLd">
             <div>
                 <div className="flex">
                     <div><img src="" alt="" /></div>
