@@ -8,8 +8,8 @@ const Header = () =>{
     return(
         <header className="lightF fs1 noLineBreak bgLd">
             <div>
-                <div className="flex">
-                    <div><img src="" alt="" /></div>
+                <div className="flex alignC">
+                    <div className="logoContainer"><img src="/images/logo5.png" alt="" className="logoImg"/></div>
                     <div className="capital mediumF fs1_5">juzvents</div>
                 </div>
             </div>

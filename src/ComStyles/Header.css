@@ -7,3 +7,13 @@ header{
     position: fixed;
     z-index: 100;
 }
+.logoContainer{
+    width: 40px;
+    aspect-ratio: 1;
+}
+.logoImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
