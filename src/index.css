@@ -307,7 +307,7 @@ link{
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
-    
+    padding-top: 4.5rem;
   }
   .section2{
     padding-inline: 4rem;
