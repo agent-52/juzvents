@@ -8,8 +8,9 @@ header{
     z-index: 100;
 }
 .logoContainer{
+    /* width: 200px; */
+    height: 40px;
     width: 40px;
-    aspect-ratio: 1;
 }
 .logoImg{
     width: 100%;

@@ -53,7 +53,7 @@ const Footer = () =>{
                 <div className="mxW30">
                     <h4 className="mediumF fs1_5 pdB1">Customer Service</h4>
                     <div>Tel: 90738 98888/ 98749 62787</div>
-                    <div>Email: connect@outboxsurprises.com</div>
+                    <div>Email: juzvents@gmail.com</div>
                     <div className="flex alignC gap1 mgT2">
                         <div className="socialBox"><img src="/images/insta.png" alt="insta link of juzvents" /></div>
                         <div className="socialBox"><img src="/images/fb.png" alt="facebook link of juzvents" /></div>
