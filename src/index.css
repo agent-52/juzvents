@@ -395,3 +395,49 @@ link{
     height: inherit;
     
    }
+.blackImg{
+  filter: grayscale(100%);
+}
+
+/*-----------------------------------responsive section ------------------------------------*/
+
+@media screen and (max-width: 1024px) {
+
+.fs2_3{
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+}
+.gap3{
+  gap: 2rem;
+}
+.fs3{
+  font-size: 2.7rem;
+  line-height: 2.7rem;
+}
+.fs1_5{
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+}
+.fs1{
+  font-size: 1.05rem;
+  line-height: 1.05rem;
+}
+.mxW40{
+  max-width: 30ch;
+}
+.s3ImgBox{
+  width: 90%;
+  height: 90%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  transform: translateX(-10%);
+ }
+ .gap4{
+  gap: 3.2rem;
+ }
+ .pdb5{
+  padding-block: 4rem;
+ }
+
+}

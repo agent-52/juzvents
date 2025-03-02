@@ -7,7 +7,7 @@ const Section2 = () =>{
             <div className="section2Courseral">
                 <div>
                     <div className="boxImg1">
-                        <img src="/images/4.jpg" alt="" />
+                        <img src="/images/4.jpg" alt="" className="blackImg"/>
                     </div>
                     <div className="flexC gap1 alignC tY15">
                         <h5 className="fs1 regularF capital">surprises</h5>
@@ -19,7 +19,7 @@ const Section2 = () =>{
                 </div>
                 <div>
                     <div className="boxImg1">
-                        <img src="/images/proposal4.jpg" alt="" />
+                        <img src="/images/proposal4.jpg" alt="" className="blackImg"/>
                     </div>
                     <div className="flexC gap1 alignC tY15">
                         <h5 className="fs1 regularF capital">surprises</h5>
@@ -31,7 +31,7 @@ const Section2 = () =>{
                 </div>
                 <div>
                     <div className="boxImg1">
-                        <img src="/images/2.webp" alt="" />
+                        <img src="/images/2.webp" alt="" className="blackImg"/>
                     </div>
                     <div className="flexC gap1 alignC tY15">
                         <h5 className="fs1 regularF capital">surprises</h5>

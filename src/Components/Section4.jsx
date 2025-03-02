@@ -12,7 +12,7 @@ const Section4 = () =>{
             opacity: 0,
             scrollTrigger:{
                 trigger: '.splitCard1',
-                start: "top 10%",
+                start: "top 5%",
                 end: "bottom 15%", 
                 
                 scrub: 1,
@@ -24,7 +24,7 @@ const Section4 = () =>{
             opacity: 0,
             scrollTrigger:{
                 trigger: '.splitCard2',
-                start: "top 10%",
+                start: "top 5%",
                 end: "bottom 15%", 
                 
                 scrub: 1,
@@ -35,7 +35,7 @@ const Section4 = () =>{
             opacity: 0,
             scrollTrigger:{
                 trigger: '.splitCard3',
-                start: "top 10%",
+                start: "top 5%",
                 end: "bottom 15%", 
                 
                 scrub: 1,
@@ -52,7 +52,7 @@ const Section4 = () =>{
             </div>
             <div className="splitCards splitCard1">
                 <div className="imgBox">
-                    <img src="/images/1.jpg" alt="" />
+                    <img src="/images/1.jpg" alt="" className="blackImg"/>
                 </div>
                 <div className="flexC gap1_5">
                     <h6 className="lightF fs1">Step 1</h6>
@@ -63,9 +63,9 @@ const Section4 = () =>{
             </div>
             <div className="splitCards splitCard2">
                 <div className="imgBox">
-                    <img src="/images/8.webp" alt="" />
+                    <img src="/images/8.webp" alt="" className="blackImg"/>
                 </div>
-                <div className="flexC gap1_5">
+                <div className="flexC gap1_5 splitCard2Content">
                     <h6 className="lightF fs1">Step 2</h6>
                     <h4 className="mediumF fs1_8 mxW30"> Haute couture - we curate unique celebrations for every client</h4>
                     <p className="mxW30 regularF fs1_2">With details in hand, we get to planning an experience tailor-made for your tastes.
@@ -75,7 +75,7 @@ const Section4 = () =>{
             </div>
             <div className="splitCards splitCard3">
                 <div className="imgBox">
-                    <img src="/images/10.jpg" alt="" />
+                    <img src="/images/10.jpg" alt="" className="blackImg"/>
                 </div>
                 <div className="flexC gap1_5">
                     <h6 className="lightF fs1">Step 3</h6>

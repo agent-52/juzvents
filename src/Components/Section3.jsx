@@ -31,12 +31,12 @@ const Section3 = () =>{
                         <h3>Big Impact</h3>
                         
                     </div>
-                    <p className="regularF fs1 mxW40">It's the little things that make the biggest difference. We take care of every detail—decor, music, food, and atmosphere—so your event feels just right.</p>
+                    <p className="regularF fs1 mxW40 cLd">It's the little things that make the biggest difference. We take care of every detail—decor, music, food, and atmosphere—so your event feels just right.</p>
                     <Button text="Plan a Surprise" classArray="cD bgW pdi2 mediumF fs1 pdb0_5 minContent noLineBreak"/>
                 </div>
             </div>
             <div className="bgLd  boxImage2">
-                <div className="s3ImgBox"><img className="s2Img" src="/images/proposal2.jpg" alt="" /></div>
+                <div className="s3ImgBox"><img className="s2Img blackImg" src="/images/proposal2.jpg" alt="" /></div>
             </div>
         </section>
     )

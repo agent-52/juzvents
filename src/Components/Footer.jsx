@@ -9,9 +9,9 @@ const Footer = () =>{
                 <h4 className="fs3 boldF">Follow Us</h4>
                 <h5 className="fs1 regularF">@juzvents</h5>
             </div>
-            <div className="courseral">
+            {/* <div className="courseral">
                 
-            </div>
+            </div> */}
             <div>
                 <div className="flexC alignC gap1_5">
                     <h2 className="boldF fs3">Surprises in your inbox</h2>
