@@ -1,4 +1,4 @@
-header{
+.pcHeader{
     padding-inline: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -17,4 +17,40 @@ header{
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+.mobileHeader{
+    position: fixed;
+    z-index: 100;
+}
+.cross{
+    position: absolute;
+    z-index: 200;
+    right: 5px;
+    top: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.hamburger{
+   opacity: 0.7;
+   transform: scale(0.7);
+
+}
+.mobileHeaderDesc{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    position: fixed;
+    width: 100vw;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(0.5rem);
+    transition: all 0.3s ease-in-out;
+}
+.hidden{
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+@media screen and (max-width: 930px) {
+    
 }

@@ -85,6 +85,9 @@ link{
 .justifySe{
   justify-content: space-evenly;
 }
+.justifySb{
+  justify-content: space-between;
+}
 
 .alignC{
     align-items: center;
@@ -192,6 +195,9 @@ link{
 
   /* 
   */
+  .pdi0{
+    padding-inline: 0.5rem;
+  }
   .pdi1{
     padding-inline: 1rem;
   }.pdi1_5{
@@ -336,6 +342,10 @@ link{
     border-radius: 5rem;
   }
 
+  .relative{
+    position: relative;
+  }
+
   /* 
    */
    input, textarea{
@@ -440,4 +450,8 @@ link{
   padding-block: 4rem;
  }
 
+}
+
+@media screen and (max-width: 930px) {
+    
 }
