@@ -25,7 +25,7 @@ const Footer = () =>{
                     
                 </div>
             </div>
-            <div className="flex justifySe lightF pdb6 mgT2 bT1W">
+            <div className="flex justifySe lightF pdb6 mgT2 bT1W lateFooter">
                 <div className="mxW30 flexC gap00">
                     <h4 className="mediumF fs1_5 pdB1">Shop</h4>
                     <Link>All Products</Link>

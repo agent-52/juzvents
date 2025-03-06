@@ -3,7 +3,7 @@ const Section2 = () =>{
 
     return(
         <section className="section2 flexC gap3">
-            <h1 className="boldF fs3 capital textC ">your celebration deserves more</h1>
+            <h1 className="boldF fs3 capital textC s2H">your celebration deserves more</h1>
             <div className="section2Courseral">
                 <div>
                     <div className="boxImg1">

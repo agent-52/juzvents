@@ -324,6 +324,7 @@ link{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     justify-items: center;
+    grid-auto-flow: row;
   }
   .section3{
     display: grid;
@@ -454,4 +455,102 @@ link{
 
 @media screen and (max-width: 930px) {
     
+}
+@media screen and (max-width: 768px) {
+  .lateFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding-inline-start: 1rem;
+    
+  }
+  .pdB1{
+    padding-bottom: 0.7rem;
+  }
+  .pdb6{
+    padding-block: 4.5rem;
+  }
+  .formSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .formSection h5,h3{
+    text-align: center;
+  }
+  form{
+    align-items: center;
+    
+  }
+  form>div{
+    width: 100%;
+  }
+
+  .section3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: min-content;
+    padding-block: 5rem;
+    gap: 2rem;
+
+  }
+  .section3Desc{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .boxImage2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .s3ImgBox{
+    width: 90%;
+    height: 85%;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    transform: translateX(0%);
+   }
+   .boxImage2 img{
+    object-fit: cover;
+    width: 120%;
+    height: inherit;
+    
+   }
+   .section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4.5rem;
+    text-align: center;
+    gap: 2rem;
+  }
+  .section1Desc{
+    align-items: center;
+    text-align: center;
+  }
+  .section2{
+    padding-inline: 4rem;
+    padding-block: 6rem;
+  }
+  .section2Courseral{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .s2H{
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 425px){
+
 }

@@ -4,7 +4,7 @@ const Section1 = () =>{
 
     return(
         <section className="section1">
-            <div className="flexC gap3 ">
+            <div className="flexC gap3 section1Desc">
                 <div className="boldF fs2_3 flexC gap1_5">
                     <h1>Tailored Events  </h1>
                     <h1>For Every</h1>

@@ -25,7 +25,7 @@ const Section3 = () =>{
         <section className="section3">
             <div className="flexC gap1 justifyC placeSelfC">
                 <div><h5 className="lightF fs1 capital">our vision</h5></div>
-                <div className="flexC gap2 w100">
+                <div className="flexC gap2 w100 section3Desc">
                     <div className="fs2 flexC gap1 mediumF">
                         <h3>Small Details, </h3>
                         <h3>Big Impact</h3>

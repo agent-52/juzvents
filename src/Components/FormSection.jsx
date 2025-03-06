@@ -3,7 +3,7 @@ import Button from "../Components/Button"
 const FormSection = () =>{
 
     return(
-        <section className="flex justifyC gap6 pdb6 pdt8">
+        <section className="flex justifyC gap6 pdb6 pdt8 formSection">
             <div className="flexC gap2">
                 <h5 className="capital lightF fs1">let's talk, shall we?</h5>
                 <div className="boldF fs2_5 flexC gap1">
@@ -36,7 +36,7 @@ const FormSection = () =>{
                         <label htmlFor="message">Write a message</label>
                         <textarea />
                     </div>
-                    <div className="pdb1">
+                    <div className="pdb1 formButton">
                         <Button text="Submit" classArray="bgW cD fs1 regularF pdi3 pdb0_5 brR"/>
                     </div>
                 </form>

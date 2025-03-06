@@ -21,6 +21,7 @@
 .mobileHeader{
     position: fixed;
     z-index: 100;
+    padding-block: 0.2rem;
 }
 .cross{
     position: absolute;
