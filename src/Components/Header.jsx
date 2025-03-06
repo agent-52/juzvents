@@ -22,6 +22,13 @@ const Header = () =>{
         }
     }
     useEffect(() =>{
+        if(window.innerWidth>930){
+            setHeaderType("pc")
+            console.log("viewing in a pc")
+        }else{
+            setHeaderType("mobile")
+            console.log("switched header to hamburger")
+        }
         window.addEventListener("resize", () =>{
             if(window.innerWidth>930){
                 setHeaderType("pc")
@@ -35,7 +42,7 @@ const Header = () =>{
     if(headerType === "pc"){
         return(
         
-            <header className="lightF fs1 noLineBreak bgLd pcHeader">
+            <header className="lightF fs1 noLineBreak bgLd pcHeader w100">
                 <div>
                     <div className="flex alignC">
                         <div className="logoContainer"><img src="/images/logo5.png" alt="" className="logoImg"/></div>
