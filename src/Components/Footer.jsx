@@ -13,7 +13,7 @@ const Footer = () =>{
                 
             </div> */}
             <div>
-                <div className="flexC alignC gap1_5">
+                <div className="flexC alignC gap1_5 textC">
                     <h2 className="boldF fs3">Surprises in your inbox</h2>
                     <h4 className="fs1 regularF">Join to get exclusive offers & discounts</h4>
                 </div>

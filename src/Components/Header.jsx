@@ -63,7 +63,7 @@ const Header = () =>{
                     <div className="capital mediumF fs1_5">juzvents</div>
                 </div>
                 <div><img src="/images/hamburger.png" alt="" className="cross" onClick={handleDescVisibility}/></div>
-                <div className="mobileHeaderDesc bgLd capital hidden fs1_5">
+                <div className="mobileHeaderDesc bgLd capital hidden fs2">
                     <Link>Home</Link>
                     <Link>for your partner</Link>
                     <Link>for your occasions</Link>

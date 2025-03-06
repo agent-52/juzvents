@@ -14,7 +14,7 @@ const FormSection = () =>{
             <div>
                 <form action="" method="post" className="flexC gap1_5">
                     <h4 className="pdB2 fs2 mediumF">Connect with us</h4>
-                    <div className="flex gap1_5">
+                    <div className="flex gap1_5 nameSection">
                         <div className="flexC gap0">
                             <label htmlFor="firstName">First Name</label>
                             <input type="text" className="input"/>
