@@ -569,6 +569,9 @@ link{
   .splitCard1{
     padding-top: 2.5rem;
   }
+  .nameSection{
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 325px){
   .section2{
