@@ -1,4 +1,5 @@
 import Button from "./Button"
+import { Link } from "react-router-dom";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -32,7 +33,7 @@ const Section3 = () =>{
                         
                     </div>
                     <p className="regularF fs1 mxW40 cLd">It's the little things that make the biggest difference. We take care of every detail—decor, music, food, and atmosphere—so your event feels just right.</p>
-                    <Button text="Plan a Surprise" classArray="cD bgW pdi2 mediumF fs1 pdb0_5 minContent noLineBreak"/>
+                    <Link to={"/events/couple"}><Button text="Plan a Surprise" classArray="cD bgW pdi2 mediumF fs1 pdb0_5 minContent noLineBreak"/></Link>
                 </div>
             </div>
             <div className="bgLd  boxImage2">

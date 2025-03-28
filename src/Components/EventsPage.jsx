@@ -52,11 +52,11 @@ const EventsPage = () =>{
                         {name === "all" ? (
                         <AllEvents eventArray={events}/>
                     ) : name === "family" ? (
-                        <FamilyEvents />
-                    ) : name === "couples" ? (
-                        <CouplesEvents />
+                        <FamilyEvents eventArray={events}/>
+                    ) : name === "couple" ? (
+                        <CouplesEvents eventArray={events}/>
                     ) : name === "friends" ? (
-                        <FriendsEvents />
+                        <FriendsEvents eventArray={events}/>
                     ): null}
                 </div>
             </div>

@@ -44,15 +44,16 @@ const Header = () =>{
         
             <header className="lightF fs1 noLineBreak bgLd pcHeader w100">
                 <div>
-                    <div className="flex alignC">
+                    <Link to={"/"}><div className="flex alignC">
                         <div className="logoContainer"><img src="/images/logo5.png" alt="" className="logoImg"/></div>
                         <div className="capital mediumF fs1_5">juzvents</div>
-                    </div>
+                    </div></Link>
                 </div>
                 <div className="flex  justifyC gap4 capital">
-                    <Link>all</Link>
-                    <Link>for your partner</Link>
-                    <Link>for your occasions</Link>
+                    <Link to={"/events/all"}>all</Link>
+                    <Link to={"/events/couple"}>for your partner</Link>
+                    <Link to={"/events/family"}>for your family</Link>
+                    <Link to={"/events/friends"}>for your friends</Link>
                     <Link>about us</Link>
                 </div>
                 <div className="flex justifyE">

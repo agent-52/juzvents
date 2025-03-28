@@ -1,11 +1,11 @@
-
+import { Link } from "react-router-dom"
 const Section2 = () =>{
 
     return(
         <section className="section2 flexC gap3">
             <h1 className="boldF fs3 capital textC s2H">your celebration deserves more</h1>
             <div className="section2Courseral">
-                <div>
+                <Link to={"/events/friends"}>
                     <div className="boxImg1">
                         <img src="/images/4.jpg" alt="" className="blackImg"/>
                     </div>
@@ -16,8 +16,8 @@ const Section2 = () =>{
                             <h3>friends</h3>   
                         </div>
                     </div>
-                </div>
-                <div>
+                </Link>
+                <Link to={"/events/couple"}>
                     <div className="boxImg1">
                         <img src="/images/proposal4.jpg" alt="" className="blackImg"/>
                     </div>
@@ -28,8 +28,8 @@ const Section2 = () =>{
                             <h3>partner</h3>
                         </div>
                     </div>
-                </div>
-                <div>
+                </Link>
+                <Link to={"/events/family"}>
                     <div className="boxImg1">
                         <img src="/images/2.webp" alt="" className="blackImg"/>
                     </div>
@@ -41,7 +41,7 @@ const Section2 = () =>{
                             
                         </div>
                     </div>
-                </div>
+                </Link>
             </div>
         </section>
     )
