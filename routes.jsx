@@ -1,5 +1,5 @@
 import App from "./src/App";
-// import Profile from "./Profile";
+import EventsPage from "./src/Components/EventsPage";
 import ErrorPage from "./src/ErrorPage";
 
 const routes = [
@@ -9,8 +9,8 @@ const routes = [
     errorElement: <ErrorPage />,
   },
   {
-    path: "profile/:name",
-    // element: <Profile />,
+    path: "/events/:name",
+    element: <EventsPage />
   },
 ];
 

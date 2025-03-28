@@ -92,6 +92,9 @@ link{
 .alignC{
     align-items: center;
 }
+.alignL{
+  align-items: start;
+}
 .textC{
   text-align: center;
 }
@@ -209,6 +212,9 @@ link{
   .pdi3{
     padding-inline: 3rem;
   }
+  .pdi4{
+    padding-inline: 6rem;
+  }
   
 
   .pdb0_5{
@@ -240,6 +246,9 @@ link{
   }
   .pdt1{
     padding-top: 1rem;
+  }
+  .pdt1_5{
+    padding-top: 1.5rem;
   }
   .pdt2{
     padding-top: 2rem;
@@ -275,6 +284,12 @@ link{
    .mgT2{
     margin-top: 2rem;
    }
+   .mgT4{
+    margin-top: 4rem;
+   }
+   .mgB4{
+    margin-bottom: 4rem;
+   }
 
 
 
@@ -284,6 +299,10 @@ link{
 .bT1W{
   border-top: 1px solid #ffffe39a;
 }
+.bTB1w{
+  border-top:  1px solid #30302b;
+  border-bottom: 1px solid #30302b;
+}
 
 
 
@@ -292,6 +311,11 @@ link{
    */
    .noLineBreak{
     white-space: noWrap;
+   }
+   .tWrap{
+    /* overflow-wrap: break-word; */
+    /* white-space: normal; */
+    /* max-width: 80%; */
    }
    .minContent{
     width: min-content;

@@ -35,6 +35,9 @@
    transform: scale(0.7);
 
 }
+.translucent{
+    opacity: 0.7;
+}
 .mobileHeaderDesc{
     display: grid;
     height: 100vh;

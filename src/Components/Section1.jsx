@@ -1,5 +1,5 @@
 import Button from "./Button"
-
+import { Link } from "react-router-dom"
 const Section1 = () =>{
 
     return(
@@ -14,7 +14,7 @@ const Section1 = () =>{
                     <h6 className="cLd lightF">People trust us with their grandest celebrations.</h6>
                     <h6 className="cLd lightF">Sit back, let Juzvents curate your occasion for you!</h6>
                 </div>
-                <Button text="Plan a Surprise" classArray="cD bgW pdi2 mediumF fs1 pdb0_5 minContent noLineBreak" />
+                <Link to="/events/all"><Button text="Plan a Surprise" classArray="cD bgW pdi2 mediumF fs1 pdb0_5 minContent noLineBreak" /></Link>
             </div>
             <div className="boxImg1">
                 <img src="/images/hero1.jpg" alt="" />
