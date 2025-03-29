@@ -6,7 +6,7 @@ const useEvents = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:3000/", { mode: "cors" })
+    fetch("https://extensive-erda-alivedevs-0efdb804.koyeb.app/", { mode: "cors" })
       .then((response) => {
         if (response.status >= 400) {
           throw new Error("server error");
