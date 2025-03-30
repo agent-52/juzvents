@@ -88,6 +88,9 @@ link{
 .justifySb{
   justify-content: space-between;
 }
+.justifyS{
+  justify-content: flex-start;
+}
 
 .alignC{
     align-items: center;
@@ -121,11 +124,17 @@ link{
  .gap2{
     gap: 2rem;
  }
+ .gap2_5{
+  gap: 2.5rem;
+ }
  .gap3{
     gap: 3rem;
  }
  .gap4{
     gap: 4rem;
+ }
+ .gap4_5{
+  gap: 4.5rem;
  }
  .gap6{
   gap: 6rem;
@@ -139,6 +148,10 @@ link{
 }.fs1{
     font-size: 1.1rem;
     line-height: 1.1rem;
+}
+.fsOriginal{
+  font-size: 1.05rem;
+  line-height: 1.05rem;
 }
 .fs1_2{
   font-size: 1.2rem;
@@ -226,6 +239,9 @@ link{
   .pdb1{
     padding-block: 1rem;
   }
+  .pdb1_5{
+    padding-block: 1.5rem;
+  }
   .pd1_5{
     padding-block: 1.9rem;
   }
@@ -258,6 +274,9 @@ link{
   }
   .pdt4{
     padding-top: 4rem;
+  }
+  .pdt4_5{
+    padding-top: 4.5rem;
   }
   .pdt6{
     padding-top: 6rem;
@@ -297,11 +316,14 @@ link{
 /* 
  */
 .bT1W{
-  border-top: 1px solid #ffffe39a;
+  border-top: 1px solid #30302b;
 }
 .bTB1w{
   border-top:  1px solid #30302b;
   border-bottom: 1px solid #30302b;
+}
+.bB1W{
+  border-bottom: 1px solid #FFFFE3;
 }
 
 
@@ -319,6 +341,12 @@ link{
    }
    .minContent{
     width: min-content;
+   }
+   .fitContent{
+    width: fit-content;
+   }
+   .maxContent{
+    width: max-content;
    }
    .mxW40{
     max-width: 40ch;
@@ -365,6 +393,9 @@ link{
   /*  */
   .brR{
     border-radius: 5rem;
+  }
+  .rb{
+    border: 1px solid red;
   }
 
   .relative{

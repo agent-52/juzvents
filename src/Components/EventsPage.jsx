@@ -30,7 +30,7 @@ const EventsPage = () =>{
             </div>
             
             <div className="EventPageMainSection pdi4 mgT4 mgB4">
-                <div className="bTB1w pd1_5">
+                <div className="bT1W pd1_5">
                     <div className="flex alignC justifySb fs1_2 ">
                         <h4 >Category</h4>
                         <div>-</div>
