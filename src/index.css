@@ -22,6 +22,16 @@ body{
 }
 button{
     border: none;
+    border: 1px solid #FFFFE3;
+    transition: all 0.3s ease;
+}
+button:hover{
+  background-color: #10100e;
+  color: #FFFFE3;
+}
+button:active{
+  background-color: #10100e;
+  color: #FFFFE3;
 }
 
 link{

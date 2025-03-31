@@ -4,15 +4,16 @@ import Header from "./Header";
 import FormSection from "./FormSection"
 import Footer from "./Footer";
 import "../ComStyles/ProductPage.css"
+import ProductForm from "./ProductForm";
 
 const ProductPage = () =>{
 
-    const {name} = useParams();
+    const {eventName} = useParams();
     const { events, error, loading } = useEvents();
     if (loading) return <p>Loading...</p>;
     if (error) return <p>A network error was encountered</p>;
 
-    const foundEvent = events.find(event => event.eventname === name.split("-").join(" "));
+    const foundEvent = events.find(event => event.eventname === eventName.split("-").join(" "));
     console.log(foundEvent)
 
     return(
@@ -53,12 +54,12 @@ const ProductPage = () =>{
                                     ))}
                                 </ul>
                             </div>
-                            {foundEvent.ttk ? (<div>
+                            {foundEvent.ttk ? (<div className="bB1W">
                                 <div className="flex alignC justifySb fs1_2 ">
                                     <h4 >Things to know:</h4>
                                     <div>-</div>
                                 </div>
-                                <ul className="pdt1_5 flexC justifyC gap0" style={{listStyle: "none"}}>
+                                <ul className="pdb1_5 flexC justifyC gap0" style={{listStyle: "none"}}>
                                     {foundEvent.ttk?.map((ttk, index) => (
                                         <li className="fs1 translucent"
                                         key={index}
@@ -68,13 +69,13 @@ const ProductPage = () =>{
                                     ))}
                                 </ul>
                             </div>): null}
-                            {foundEvent.addons ? (<div>
+                            {foundEvent.addons ? (<div className="bB1W">
                                 <div className="flex alignC justifySb fs1_2 ">
                                     <h4 >Add ons:</h4>
                                     <div>-</div>
                                 </div>
                                 
-                                <ul className="pdt1_5 flexC justifyC gap0" style={{listStyle: "none"}}>
+                                <ul className="pdb1_5 flexC justifyC gap0" style={{listStyle: "none"}}>
                                     {foundEvent.addons?.map((addon, index) => (
                                         <li className="fs1 translucent"
                                         key={index}
@@ -85,7 +86,8 @@ const ProductPage = () =>{
                                 </ul>
                             </div>): null}
                         </div>
-                        <form action=""></form>
+                        <ProductForm />
+                        {/* <form action=""></form> */}
                     </div>
                 </div>
 

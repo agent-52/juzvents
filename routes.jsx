@@ -14,7 +14,7 @@ const routes = [
     element: <EventsPage />
   },
   {
-    path: "/product-page/:name",
+    path: "/product-page/:eventName",
     element: <ProductPage />
   }
 ];
