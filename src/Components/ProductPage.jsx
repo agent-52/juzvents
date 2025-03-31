@@ -86,7 +86,7 @@ const ProductPage = () =>{
                                 </ul>
                             </div>): null}
                         </div>
-                        <ProductForm />
+                        <div className="pdt4"><ProductForm /></div>
                         {/* <form action=""></form> */}
                     </div>
                 </div>

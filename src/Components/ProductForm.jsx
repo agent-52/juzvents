@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom"; // Import useParams
 import axios from "axios";
+import "../ComStyles/ProductForm.css"
 
 const ProductForm = () => {
     const { eventName } = useParams(); // Get event name from URL
@@ -26,9 +27,9 @@ const ProductForm = () => {
             setMessage(response.data.message);
             setShowPopup(true);
 
-            setTimeout(() => {
-                setShowPopup(false);
-            }, 5000);
+            // setTimeout(() => {
+            //     setShowPopup(false);
+            // }, 5000);
 
             console.log("Server Response:", response.data);
 
@@ -41,35 +42,36 @@ const ProductForm = () => {
 
     return (
         <div>
-            <h2>Contact Us</h2>
-            <p>Event: {eventName}</p> {/* Display event name */}
-            <form onSubmit={handleSubmit}>
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Enter your name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                />
-                <input
-                    type="text"
-                    name="phoneNumber"
-                    placeholder="Enter your phone number"
-                    value={formData.phoneNumber}
-                    onChange={handleChange}
-                    required
-                />
-                <button type="submit">Submit</button>
+            
+            <form onSubmit={handleSubmit} className="flexC gap1_5">
+                <div className="flex wrap gap1_5 ">
+                    <input className="fs1 pdb0 mediumF"
+                        type="text"
+                        name="name"
+                        placeholder="Enter your name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        required
+                    />
+                    <input className="fs1 pdb0 mediumF"
+                        type="text"
+                        name="phoneNumber"
+                        placeholder="Enter your phone number"
+                        value={formData.phoneNumber}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+                <button type="submit" className="cD bgW pdi2 mediumF fs1 pdb0_5 minContent noLineBreak">Request a Call Back</button>
             </form>
-            <p>{message}</p>
+            {/* <p>{message}</p> */}
 
             {/* Popup Modal */}
             {showPopup && (
-                <div style={popupStyles}>
-                    <div style={popupContentStyles}>
-                        <button style={closeButtonStyles} onClick={() => setShowPopup(false)}>×</button>
-                        <p>We will contact you soon!</p>
+                <div className="popupStyles bgLd cW ">
+                    <div className="popupContentStyles">
+                        {/* <button className="closeButtonStyles fs2 boldF" onClick={() => setShowPopup(false)}>×</button> */}
+                        <h1>We will contact you soon!🥳</h1>
                     </div>
                 </div>
             )}
@@ -79,35 +81,3 @@ const ProductForm = () => {
 
 export default ProductForm;
 
-const popupStyles = {
-    position: "fixed",
-    top: "0",
-    left: "0",
-    width: "100%",
-    height: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    zIndex: "1000"
-};
-
-const popupContentStyles = {
-    backgroundColor: "white",
-    padding: "20px",
-    borderRadius: "10px",
-    boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2)",
-    position: "relative",
-    textAlign: "center",
-    minWidth: "300px"
-};
-
-const closeButtonStyles = {
-    position: "absolute",
-    top: "5px",
-    right: "10px",
-    fontSize: "18px",
-    border: "none",
-    background: "none",
-    cursor: "pointer"
-};

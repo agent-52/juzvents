@@ -239,7 +239,9 @@ link{
     padding-inline: 6rem;
   }
   
-
+  .pdb0{
+    padding-block: 0.5rem;
+  }
   .pdb0_5{
     padding-block: 0.7rem;
   }
@@ -333,7 +335,7 @@ link{
   border-bottom: 1px solid #30302b;
 }
 .bB1W{
-  border-bottom: 1px solid #FFFFE3;
+  border-bottom: 1px solid #ffffe3b2;
 }
 
 
@@ -348,6 +350,9 @@ link{
     /* overflow-wrap: break-word; */
     /* white-space: normal; */
     /* max-width: 80%; */
+   }
+   .wrap{
+    flex-wrap: wrap;
    }
    .minContent{
     width: min-content;
