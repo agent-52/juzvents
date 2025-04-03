@@ -51,43 +51,43 @@ const Section4 = () =>{
 
         })
 
-    //     mm.add("(max-width: 767px)", () => {
-    //         // Mobile animation (adjusted)
-    //         const tl = gsap.timeline();
-    //         tl.to('.splitCard1', { 
-    //             scale: 0.8, opacity: 0.5,
-    //             scrollTrigger:{
-    //                 trigger: '.splitCard1',
-    //                 start: "20% 20%",
-    //                 end: "bottom 40%",
-    //                 scrub: 1,
-    //             }
-    //         });
-    //         tl.to('.splitCard2', { 
-    //             scale: 0.8,
-    //             opacity: 0.5,
-    //             scrollTrigger:{
-    //                 trigger: '.splitCard2',
-    //                 start: "20% 20%",
-    //                 end: "bottom 40%", 
-    //                 scrub: 1,
+        // mm.add("(max-width: 767px)", () => {
+        //     // Mobile animation (adjusted)
+        //     const tl = gsap.timeline();
+        //     tl.to('.splitCard1', { 
+        //         scale: 0.8, opacity: 0.5,
+        //         scrollTrigger:{
+        //             trigger: '.splitCard1',
+        //             start: "20% 20%",
+        //             end: "bottom 40%",
+        //             scrub: 1,
+        //         }
+        //     });
+        //     tl.to('.splitCard2', { 
+        //         scale: 0.8,
+        //         opacity: 0.5,
+        //         scrollTrigger:{
+        //             trigger: '.splitCard2',
+        //             start: "20% 20%",
+        //             end: "bottom 40%", 
+        //             scrub: 1,
                     
-    //             }
-    //         });
-    //         tl.to('.splitCard3', { 
-    //             scale: 0.8,
-    //             opacity: 0.5,
-    //             scrollTrigger:{
-    //                 trigger: '.splitCard3',
-    //                 start: "20% 20%",
-    //                 end: "bottom 40%", 
+        //         }
+        //     });
+        //     tl.to('.splitCard3', { 
+        //         scale: 0.8,
+        //         opacity: 0.5,
+        //         scrollTrigger:{
+        //             trigger: '.splitCard3',
+        //             start: "20% 20%",
+        //             end: "bottom 40%", 
                     
-    //                 scrub: 1,
+        //             scrub: 1,
                     
-    //             }
-    //         });
-    //     });
-    // }); 
+        //         }
+        //     });
+        // });
+    }); 
 
     return(
         <section>
