@@ -25,17 +25,17 @@ const EventsPage = () =>{
         <div className="eventsPage regularF">
             <Header />
             <div className="relative">
-                <div className="bannerText cW boldF fs3">All Surprises</div>
+                <div className="bannerText cW boldF fs3 textC">Surprises</div>
                 <div className="bannerImgContainer"><img src="/images/banner.png" alt="" /></div>
             </div>
             
-            <div className="EventPageMainSection pdi4 mgT4 mgB4">
+            <div className="EventPageMainSection pdi4 mgT4 mgB4" id="EventPageMainSection">
                 <div className="bT1W pd1_5">
-                    <div className="flex alignC justifySb fs1_2 ">
+                    <div className="flex alignC justifySb fs1_2 " id="categoryHeading">
                         <h4 >Category</h4>
                         <div>-</div>
                     </div>
-                    <ul className="pdt1_5 flexC justifyC gap0" style={{listStyle: "none"}}>
+                    <ul className="pdt1_5 flexC justifyC gap0 " id="categorySection" style={{listStyle: "none"}}>
                         {options.map((item, index) => (
                             <Link to={`/events/${item.toLowerCase()}`}><li className="fs1 translucent"
                             key={index}

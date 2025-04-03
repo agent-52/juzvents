@@ -39,10 +39,62 @@
 }
 .eventGrid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     grid-gap: 1rem;
 }
 .card1{
     width: 100%;
     height: 250px;
 }
+@media screen and (max-width: 600px){
+    #EventPageMainSection{
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 1fr 6.7fr; */
+        
+        padding-inline: 1rem;
+        gap: 2rem;
+    }
+   
+    #categorySection{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    #categoryHeading{
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        gap: 1rem;
+    }
+    .bannerImgContainer>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+  }
+
+  @media screen and (max-width: 425px){
+    .eventCard1{
+        /* border: 1px solid #FFFFE3; */
+        
+        height: 330px;
+        overflow: hidden;
+    
+    }
+     
+    
+    .bannerImgContainer{
+        max-height: 220px;
+        
+    }
+
+    .bannerImgContainer>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: right;
+    }
+  }
