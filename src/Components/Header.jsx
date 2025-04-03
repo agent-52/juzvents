@@ -24,18 +24,18 @@ const Header = () =>{
     useEffect(() =>{
         if(window.innerWidth>930){
             setHeaderType("pc")
-            console.log("viewing in a pc")
+            // console.log("viewing in a pc")
         }else{
             setHeaderType("mobile")
-            console.log("switched header to hamburger")
+            // console.log("switched header to hamburger")
         }
         window.addEventListener("resize", () =>{
             if(window.innerWidth>930){
                 setHeaderType("pc")
-                console.log("viewing in a pc")
+                // console.log("viewing in a pc")
             }else{
                 setHeaderType("mobile")
-                console.log("switched header to hamburger")
+                // console.log("switched header to hamburger")
             }
         })
     }, [headerType])
@@ -72,10 +72,11 @@ const Header = () =>{
                 </div>
                 <div><img src="/images/hamburger.png" alt="" className="cross" onClick={handleDescVisibility}/></div>
                 <div className="mobileHeaderDesc bgLd capital hidden fs2">
-                    <Link>Home</Link>
-                    <Link>for your partner</Link>
-                    <Link>for your occasions</Link>
-                    <Link>about us</Link>
+                    <Link to={"/"} onClick={handleDescVisibility}>Home</Link>
+                    <Link to={"/events/couple"} onClick={handleDescVisibility}>for your partner</Link>
+                    <Link to={"/events/family"} onClick={handleDescVisibility}>for your family</Link>
+                    <Link to={"/events/friends"} onClick={handleDescVisibility}>for your friends</Link>
+                    <Link> onClick={handleDescVisibility}about us</Link>
                 </div>
             </header>
         )
