@@ -76,7 +76,7 @@ const Header = () =>{
                     <Link to={"/events/couple"} onClick={handleDescVisibility}>for your partner</Link>
                     <Link to={"/events/family"} onClick={handleDescVisibility}>for your family</Link>
                     <Link to={"/events/friends"} onClick={handleDescVisibility}>for your friends</Link>
-                    <Link> onClick={handleDescVisibility}about us</Link>
+                    <Link onClick={handleDescVisibility}> about us</Link>
                 </div>
             </header>
         )
