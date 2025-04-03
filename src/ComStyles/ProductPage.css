@@ -2,7 +2,7 @@
 .productGrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    padding-inline: 1rem;
     
     
 }
@@ -33,3 +33,24 @@
     color: #FFFFE3;
     opacity: 1;
 }
+
+@media screen and (max-width: 768px){
+    .productGrid{
+        display: flex;
+        flex-direction: column;
+        
+        padding-inline: 1rem;
+        
+        
+    }
+    #productNavigator{
+        padding-block: 1rem;
+    }
+    .productImage{
+        border: 1px solid #FFFFE3;
+        width: 100%;
+        max-width: 500px;
+        max-height: 400px;
+        
+    }
+  }

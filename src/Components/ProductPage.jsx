@@ -22,7 +22,7 @@ const ProductPage = () =>{
             <div className="flexC alignC justifyC gap1 pdb5">
                 
                     
-                <div className="flex alignC justifySb w100  pdb3 pdi3 ">
+                <div className="flex alignC justifySb w100  pdb3 pdi3 " id="productNavigator">
                     <div className="translucent pointer flex alignC navigator">{"< "}Prev</div>
                     
                     <div className="translucent pointer flex alignC navigator">Next {'>'}</div>

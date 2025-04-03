@@ -43,12 +43,12 @@ const ProductForm = () => {
     return (
         <div>
             
-            <form onSubmit={handleSubmit} className="flexC gap1_5">
+            <form onSubmit={handleSubmit} className="flexC gap1_5 alignL">
                 <div className="flex wrap gap1_5 ">
                     <input className="fs1 pdb0 mediumF"
                         type="text"
                         name="name"
-                        placeholder="Enter your name"
+                        placeholder="Your name"
                         value={formData.name}
                         onChange={handleChange}
                         required
@@ -56,7 +56,7 @@ const ProductForm = () => {
                     <input className="fs1 pdb0 mediumF"
                         type="text"
                         name="phoneNumber"
-                        placeholder="Enter your phone number"
+                        placeholder="Your phone number"
                         value={formData.phoneNumber}
                         onChange={handleChange}
                         required
