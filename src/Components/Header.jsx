@@ -58,7 +58,7 @@ const Header = () =>{
                 </div>
                 <div className="flex justifyE">
                     <div ><img src="" alt="" /></div>
-                    <Button text="Call us" classArray="mediumF bgW cD pdi2 pdb0_5 fs1" />
+                    <a href="tel:+91 92443 30496"><Button text="Call us" classArray="mediumF bgW cD pdi2 pdb0_5 fs1" /></a>
                 </div>
             </header>
         )
