@@ -17,6 +17,7 @@ const Section4 = () =>{
                 end: "bottom 15%", 
                 
                 scrub: 1,
+                invalidateOnRefresh: true,
                 // pin: true
             }
         }); // <-- automatically reverted
@@ -29,6 +30,7 @@ const Section4 = () =>{
                 end: "bottom 15%", 
                 
                 scrub: 1,
+                invalidateOnRefresh: true,
             }
         });
         tl.to('.splitCard3', { 
@@ -40,6 +42,7 @@ const Section4 = () =>{
                 end: "bottom 15%", 
                 
                 scrub: 1,
+                invalidateOnRefresh: true,
             }
         });
     }); 
