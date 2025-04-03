@@ -70,8 +70,8 @@ const ProductForm = () => {
             {showPopup && (
                 <div className="popupStyles bgLd cW ">
                     <div className="popupContentStyles">
-                        <button className="closeButtonStyles fs2 boldF" onClick={() => setShowPopup(false)}>×</button>
-                        <h1>We will contact you soon!🥳</h1>
+                        {/* <button className="closeButtonStyles fs2 boldF" onClick={() => setShowPopup(false)}>×</button> */}
+                        <h1 className="fs2_3">Get ready to wow! 🎶</h1>
                     </div>
                 </div>
             )}
