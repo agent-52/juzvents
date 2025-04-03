@@ -69,9 +69,10 @@ const ProductForm = () => {
             {/* Popup Modal */}
             {showPopup && (
                 <div className="popupStyles bgLd cW ">
-                    <div className="popupContentStyles">
+                    <div className="popupContentStyles flexC alignC gap00">
                         {/* <button className="closeButtonStyles fs2 boldF" onClick={() => setShowPopup(false)}>×</button> */}
                         <h1 className="fs2_3">Get ready to wow! 🎶</h1>
+                        <p>We will contact you soon</p>
                     </div>
                 </div>
             )}
