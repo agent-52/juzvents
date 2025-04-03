@@ -49,9 +49,9 @@
 @media screen and (max-width: 600px){
     #EventPageMainSection{
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
         /* grid-template-columns: 1fr 6.7fr; */
-        
+        margin-block: 2rem;
         padding-inline: 1rem;
         gap: 2rem;
     }
