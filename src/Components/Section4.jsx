@@ -7,7 +7,8 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Section4 = () =>{
     useGSAP(() => {
         // gsap code here...
-        gsap.to('.splitCard1', { 
+        const tl = gsap.timeline()
+        tl.to('.splitCard1', { 
             scale: 0.7,
             opacity: 0,
             scrollTrigger:{
@@ -19,7 +20,7 @@ const Section4 = () =>{
                 // pin: true
             }
         }); // <-- automatically reverted
-        gsap.to('.splitCard2', { 
+        tl.to('.splitCard2', { 
             scale: 0.7,
             opacity: 0,
             scrollTrigger:{
@@ -30,7 +31,7 @@ const Section4 = () =>{
                 scrub: 1,
             }
         });
-        gsap.to('.splitCard3', { 
+        tl.to('.splitCard3', { 
             scale: 0.7,
             opacity: 0,
             scrollTrigger:{
