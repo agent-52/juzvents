@@ -7,43 +7,85 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 const Section4 = () =>{
     useGSAP(() => {
         // gsap code here...
-        const tl = gsap.timeline()
-        tl.to('.splitCard1', { 
-            scale: 0.7,
-            opacity: 0,
-            scrollTrigger:{
-                trigger: '.splitCard1',
-                start: "top 5%",
-                end: "bottom 15%", 
-                
-                scrub: 1,
-                invalidateOnRefresh: true,
-                // pin: true
-            }
-        }); // <-- automatically reverted
-        tl.to('.splitCard2', { 
-            scale: 0.7,
-            opacity: 0,
-            scrollTrigger:{
-                trigger: '.splitCard2',
-                start: "top 5%",
-                end: "bottom 15%", 
-                
-                scrub: 1,
-                invalidateOnRefresh: true,
-            }
-        });
-        tl.to('.splitCard3', { 
-            scale: 0.7,
-            opacity: 0,
-            scrollTrigger:{
-                trigger: '.splitCard3',
-                start: "top 5%",
-                end: "bottom 15%", 
-                
-                scrub: 1,
-                invalidateOnRefresh: true,
-            }
+        let mm = gsap.matchMedia();
+
+        mm.add("(min-width: 768px)", () => {
+            const tl = gsap.timeline()
+            tl.to('.splitCard1', { 
+                scale: 0.7,
+                opacity: 0,
+                scrollTrigger:{
+                    trigger: '.splitCard1',
+                    start: "top 5%",
+                    end: "bottom 15%", 
+                    
+                    scrub: 1,
+                    invalidateOnRefresh: true,
+                    // pin: true
+                }
+            }); // <-- automatically reverted
+            tl.to('.splitCard2', { 
+                scale: 0.7,
+                opacity: 0,
+                scrollTrigger:{
+                    trigger: '.splitCard2',
+                    start: "top 5%",
+                    end: "bottom 15%", 
+                    
+                    scrub: 1,
+                    invalidateOnRefresh: true,
+                }
+            });
+            tl.to('.splitCard3', { 
+                scale: 0.7,
+                opacity: 0,
+                scrollTrigger:{
+                    trigger: '.splitCard3',
+                    start: "top 5%",
+                    end: "bottom 15%", 
+                    
+                    scrub: 1,
+                    invalidateOnRefresh: true,
+                }
+            });
+
+        })
+
+        mm.add("(max-width: 767px)", () => {
+            // Mobile animation (adjusted)
+            const tl = gsap.timeline();
+            tl.to('.splitCard1', { 
+                scale: 0.8, opacity: 0.5,
+                scrollTrigger:{
+                    trigger: '.splitCard1',
+                    start: "20% 20%",
+                    end: "bottom 40%",
+                    scrub: 1,
+                }
+            });
+            tl.to('.splitCard2', { 
+                scale: 0.8,
+                opacity: 0.5,
+                scrollTrigger:{
+                    trigger: '.splitCard2',
+                    start: "20% 20%",
+                    end: "bottom 40%", 
+                    scrub: 1,
+                    
+                }
+            });
+            tl.to('.splitCard3', { 
+                scale: 0.8,
+                opacity: 0.5,
+                scrollTrigger:{
+                    trigger: '.splitCard3',
+                    start: "20% 20%",
+                    end: "bottom 40%", 
+                    
+                    scrub: 1,
+                    
+                }
+            });
         });
     }); 
 
