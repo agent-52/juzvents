@@ -5,21 +5,35 @@ input::placeholder{
 }
 .popupStyles{
     position: fixed;
-    top: 0;
+    top: 0%;
+    left: 0%;
     z-index: 1000000000000000000000;
     /* transform: translateX(-50%) translateY(-50%); */
     /* aspect-ratio: 2; */
-    padding-block: 2rem;
+    padding-block: 1rem;
+    width: 100%;
     display: grid;
+    text-align: center;
     white-space: nowrap;
     place-items: center;
     height: min-content;
     box-shadow: 0 3px 10px black;
-    border: 1px solid #FFFFE3;
+    animation: slideInLeft 0.5s ease-out forwards ;
+    /* border: 1px solid #FFFFE3; */
 
 }
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 .popupContentStyles{
-
+    text-align: center;
 }
 .closeButtonStyles{
     position: absolute;

@@ -10,8 +10,8 @@ const ProductPage = () =>{
 
     const {eventName} = useParams();
     const { events, error, loading } = useEvents();
-    if (loading) return <p>Loading...</p>;
-    if (error) return <p>A network error was encountered</p>;
+    if (loading) return <p className="w100 h100 textC flex alignC justifyC fs2 regularF">Loading...</p>;
+    if (error) return <p className="w100 h100 textC flex alignC justifyC fs2 regularF">A network error was encountered</p>;
 
     const foundEvent = events.find(event => event.eventname === eventName.split("-").join(" "));
     console.log(foundEvent)
@@ -20,14 +20,14 @@ const ProductPage = () =>{
         <div className="productPage regularF">
             <Header />
             <div className="flexC alignC justifyC gap1 pdb5">
-                <div className="flex alignC w100  pdb3 ">
-                    <div>{foundEvent.eventname}</div>
-                    <div className="flex">
-                        <button><span>{'<'} </span>Prev</button>
-                        <div>|</div>
-                        <button>Next <span>{'>'}</span></button>
-                    </div>
+                
+                    
+                <div className="flex alignC justifySb w100  pdb3 pdi3 ">
+                    <div className="translucent pointer flex alignC navigator">{"< "}Prev</div>
+                    
+                    <div className="translucent pointer flex alignC navigator">Next {'>'}</div>
                 </div>
+                
                 <div className="productGrid gap2_5">
                     <div className="flexC gap3">
                         <div className="productImage"><img src={foundEvent.image} alt="" /></div>
@@ -36,7 +36,7 @@ const ProductPage = () =>{
                     <div className="flexC justifyS">
                         <div className="flexC gap1_5">
                             <h2 className="fs2_3 mediumF">{foundEvent.eventname}</h2>
-                            <div className="fs1_5 translucent">₹{foundEvent.startingfrom}</div>
+                            {/* <div className="fs1_5 translucent">₹{foundEvent.startingfrom}</div> */}
                         </div>
                         <div className="flexC gap2 pdt4">
                             <div className="bB1W">

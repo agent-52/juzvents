@@ -22,3 +22,14 @@
     max-height: 400px;
     
 }
+.navigator{
+    transition: all 0.2s ease;
+}
+.navigator:hover{
+    color: #FFFFE3;
+    opacity: 1;
+}
+.navigator:active{
+    color: #FFFFE3;
+    opacity: 1;
+}

@@ -7,7 +7,7 @@ const EventCard1 = ({image, name, price}) =>{
             <div className="eventCardImgContainer card1"><img src={image} alt="" /></div>
             <div className="pdi1 pdb1 flexC gap0 alignC">
                 <h3 className="fs1_5 tWrap">{name}</h3>
-                <div>₹{price}</div>
+                {/* <div>₹{price}</div> */}
             </div>
         </div>
     )

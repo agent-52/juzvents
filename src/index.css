@@ -37,6 +37,9 @@ button:active{
 link{
     color: inherit;
 }
+.pointer{
+  cursor: pointer;
+}
 
 @font-face {
     font-family: lightF;
@@ -371,6 +374,9 @@ link{
    }
    .w100{
     width: 100%
+   }
+   .h100{
+    height: 100vh;
    }
 
    /* 

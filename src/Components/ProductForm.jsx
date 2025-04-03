@@ -27,9 +27,9 @@ const ProductForm = () => {
             setMessage(response.data.message);
             setShowPopup(true);
 
-            // setTimeout(() => {
-            //     setShowPopup(false);
-            // }, 5000);
+            setTimeout(() => {
+                setShowPopup(false);
+            }, 4000);
 
             console.log("Server Response:", response.data);
 
@@ -70,7 +70,7 @@ const ProductForm = () => {
             {showPopup && (
                 <div className="popupStyles bgLd cW ">
                     <div className="popupContentStyles">
-                        {/* <button className="closeButtonStyles fs2 boldF" onClick={() => setShowPopup(false)}>×</button> */}
+                        <button className="closeButtonStyles fs2 boldF" onClick={() => setShowPopup(false)}>×</button>
                         <h1>We will contact you soon!🥳</h1>
                     </div>
                 </div>

@@ -17,8 +17,8 @@ const EventsPage = () =>{
 
     const options = ["All", "Couple", "Friends", "Family"];
 
-    if (loading) return <p>Loading...</p>;
-    if (error) return <p>A network error was encountered</p>;
+    if (loading) return <p className="w100 h100 textC flex alignC justifyC fs2 regularF">Loading...</p>;
+    if (error) return <p className="w100 h100 textC flex alignC justifyC fs2 regularF">A network error was encountered</p>;
     console.log(events)
 
     return(
