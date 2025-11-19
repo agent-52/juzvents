@@ -689,3 +689,7 @@ link{
     flex-direction: column;
   }
 }
+
+.webgl{
+ /* border: 2px solid red; */
+}
