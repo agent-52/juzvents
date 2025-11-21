@@ -1,6 +1,6 @@
 import "../ComStyles/EventsPage.css"
 import { useParams } from "react-router-dom"
-import { useState } from "react"
+import { createContext, useState } from "react"
 import { Link } from "react-router-dom"
 import FamilyEvents from "./FamilyEvents"
 import Footer from "./Footer"
@@ -9,12 +9,15 @@ import CouplesEvents from "./CouplesEvents"
 import FriendsEvents from "./FriendsEvents"
 import Header from "./Header"
 import useEvents from "../hooks/hook"
+// import { createContext } from 'react';
 
+let eventsList;
 const EventsPage = () =>{
     const {name} = useParams();
     const { events, error, loading } = useEvents();
+    console.log(events)
     const [activeIndex, setActiveIndex] = useState(null);
-
+    eventsList = events;
     const options = ["All", "Couple", "Friends", "Family"];
 
     if (loading) return <p className="w100 h100 textC flex alignC justifyC fs2 regularF">...</p>;
@@ -48,6 +51,7 @@ const EventsPage = () =>{
                     </ul>
                     
                 </div>
+                
                 <div>
                         {name === "all" ? (
                         <AllEvents eventArray={events}/>
@@ -67,4 +71,5 @@ const EventsPage = () =>{
     )
 }
 
-export default EventsPage
+export default EventsPage 
+export {eventsList}

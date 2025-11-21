@@ -5,15 +5,15 @@ import FormSection from "./FormSection"
 import Footer from "./Footer";
 import "../ComStyles/ProductPage.css"
 import ProductForm from "./ProductForm";
-
+import { eventsList } from "./EventsPage";
 const ProductPage = () =>{
 
     const {eventName} = useParams();
-    const { events, error, loading } = useEvents();
-    if (loading) return <p className="w100 h100 textC flex alignC justifyC fs2 regularF">Loading...</p>;
-    if (error) return <p className="w100 h100 textC flex alignC justifyC fs2 regularF">A network error was encountered</p>;
+    // const { events, error, loading } = useEvents();
+    // if (loading) return <p className="w100 h100 textC flex alignC justifyC fs2 regularF">Loading...</p>;
+    // if (error) return <p className="w100 h100 textC flex alignC justifyC fs2 regularF">A network error was encountered</p>;
 
-    const foundEvent = events.find(event => event.eventname === eventName.split("-").join(" "));
+    const foundEvent = eventsList.find(event => event.eventname === eventName.split("-").join(" "));
     console.log(foundEvent)
 
     return(

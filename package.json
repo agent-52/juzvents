@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
+    "@tanstack/react-query": "^5.90.10",
+    "@tanstack/react-query-devtools": "^5.90.2",
     "axios": "^1.8.4",
     "lil-gui": "^0.21.0",
     "react": "^18.3.1",

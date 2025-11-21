@@ -1,32 +1,32 @@
-import { useState, useEffect } from "react";
+// hooks/useEvents.js
+import { useQuery } from "@tanstack/react-query";
 
-let cachedData = null
+const EVENTS_URL = "https://extensive-erda-alivedevs-0efdb804.koyeb.app/";
 
-const useEvents = () => {
-  const [events, setEvents] = useState(cachedData);
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(true);
+async function fetchEvents() {
+  const res = await fetch(EVENTS_URL, { mode: "cors" });
+  if (!res.ok) {
+    const text = await res.text().catch(() => "");
+    throw new Error(`Failed to fetch events: ${res.status} ${text}`);
+  }
+  return res.json();
+}
 
-  useEffect(() => {
-    if(!cachedData){
+export default function useEvents() {
+  const { data, isLoading, isError, error } = useQuery({
+    queryKey: ["events"],
+    queryFn: fetchEvents,
+    // ensure first load happens; these can stay or be adjusted
+    // staleTime: 1000 * 60 * 5,
+    // refetchOnMount: false,
+  });
 
-    
-    fetch("https://extensive-erda-alivedevs-0efdb804.koyeb.app/", { mode: "cors" })
-      .then((response) => {
-        if (response.status >= 400) {
-          throw new Error("server error");
-        }
-        
-        return response.json();
-        
-      })
-      .then((response) => setEvents(response))
-      .catch((error) => setError(error))
-      .finally(() => setLoading(false));
-    }
-  }, []);
+  
 
-  return { events, error, loading };
-};
-
-export default useEvents
+  return {
+    // return an empty array instead of null so consumers can map safely
+    events: data ?? [],
+    isLoading,
+    error: isError ? error : null,
+  };
+}
