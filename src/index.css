@@ -692,4 +692,14 @@ link{
 
 .webgl{
  /* border: 2px solid red; */
+
+}
+.webglContainer{
+  /* border: 2px solid red; */
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  
 }

@@ -13,6 +13,56 @@ const Ring = () =>{
     useEffect(() =>{
         gsap.registerPlugin(ScrollTrigger);
 
+
+        const sizes = {
+            width: window.innerWidth,
+            height: window.innerHeight
+        }
+
+         if(window.innerWidth>=1100){
+            sizes.width = window.innerWidth/3
+            sizes.height = window.innerHeight/1.5
+            }else if(window.innerWidth>768 && window.innerWidth<1100){
+            sizes.width = window.innerWidth/2.5
+            sizes.height = window.innerHeight/1.5
+            }else if(window.innerWidth>450 && window.innerWidth<=768){
+            sizes.width = window.innerWidth/2.5
+            sizes.height = window.innerHeight/3
+            }else if(window.innerWidth<=450){
+            sizes.width = window.innerWidth/1.2
+            sizes.height = window.innerHeight/3
+            }
+
+
+        window.addEventListener('resize', () =>
+            {
+                
+                // Update sizes
+                
+                if(window.innerWidth>=1100){
+                    sizes.width = window.innerWidth/3
+                    sizes.height = window.innerHeight/1.5
+                }else if(window.innerWidth>768 && window.innerWidth<1100){
+                    sizes.width = window.innerWidth/2.5
+                    sizes.height = window.innerHeight/1.5
+                }else if(window.innerWidth>450 && window.innerWidth<=768){
+                    sizes.width = window.innerWidth/2.5
+                    sizes.height = window.innerHeight/3
+                }else if(window.innerWidth<=450){
+                    sizes.width = window.innerWidth/1.2
+                    sizes.height = window.innerHeight/3
+                }
+                
+
+                // Update camera
+                camera.aspect = sizes.width / sizes.height
+                camera.updateProjectionMatrix()
+
+                // Update renderer
+                renderer.setSize(sizes.width, sizes.height)
+                renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+            })
+
         /**
          * Base
          */
@@ -64,7 +114,7 @@ const Ring = () =>{
                 gsap.to(can.rotation, { duration: 2, y: 2 ,
                     scrollTrigger:{
                         trigger: ".webgl",
-                        scrub: 4,
+                        scrub: 2.5,
                         start: "5% 20%",
                         end: "bottom 50%",
                         // markers: true,
@@ -136,10 +186,10 @@ const Ring = () =>{
         /**
          * Sizes
          */
-        const sizes = {
-            width: window.innerWidth,
-            height: window.innerHeight
-        }
+        // const sizes = {
+        //     width: window.innerWidth,
+        //     height: window.innerHeight
+        // }
 
         const cursor = {
             x:window.scrollX/window.innerWidth-0.5,
@@ -238,54 +288,10 @@ const Ring = () =>{
 
         tick()
 
-
-
-        ////////////////////gsap//////////////////
-        gsap.to(".page1", {
-            yPercent:-100,
-            
-            scrollTrigger:{
-                trigger: ".page1",
-                scrub: 3,
-                start: "10% 10%",
-                end: "450% top",
-                // markers: true,
-
-
-            }
-        })
-        gsap.to(".page2", {
-            xPercent:-20,
-            
-            scrollTrigger:{
-                trigger: ".page1",
-                scrub: 3,
-                start: "10% 10%",
-                end: "bottom top",
-                // markers: true,
-
-
-            }
-        })
-        gsap.from(".extraLargeText", {
-            x:-100,
-            opacity:0,
-            
-            scrollTrigger:{
-                trigger: ".page4",
-                scrub: 3,
-                start: "top top",
-                end: " top 20%",
-                // markers: true,
-
-
-            }
-        })
-
     })
 
     return (
-        <canvas className="webgl"></canvas>
+        <div className='webglContainer'><canvas className="webgl"></canvas></div>
     )
 }
 
