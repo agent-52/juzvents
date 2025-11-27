@@ -6,7 +6,7 @@ export default function Schedule(){
     })
     return(
         <div>
-            <Button text="Schedule Call" classArray="mediumF bgW cD pdi2 pdb0_5 fs1" />
+            <a href="tel:+918817716118"><Button text="Schedule Call" classArray="mediumF bgW cD pdi2 pdb0_5 fs1" /></a>
         </div>
     )
 }
